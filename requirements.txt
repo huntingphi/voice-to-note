@@ -1,0 +1,4 @@
+flask
+zappa
+google-cloud-speech
+twilio
