@@ -11,6 +11,9 @@ Connect to the sandbox bot and start sending it audio or voice notes, its as eas
 
 ## Demo
 
+Feel free to connect to my sandbox by sending a WhatsApp message from your device to +1 415 523 8886 with code join terrible-shop.
+
+[Whatsapp Bot Screenshot](https://dev-to-uploads.s3.amazonaws.com/i/1oz5llwkgg8sa3nwruys.png)
 
 
 ## Set up
