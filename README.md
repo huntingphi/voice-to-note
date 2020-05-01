@@ -31,8 +31,8 @@ After the above requirements have been met:
 1. Clone this repository and `cd` into it
 
 ```bash
-git clone git@github.com:twilio-labs/sample-template-nodejs.git
-cd sample-template-nodejs
+git clone https://github.com/huntingphi/voice-to-note.git
+cd voice-to-note
 ```
 
 2. Install dependencies
