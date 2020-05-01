@@ -2,7 +2,7 @@ from google.cloud import speech_v1p1beta1
 from google.cloud.speech_v1p1beta1 import enums
 import io
 
-def fetch_and_recognize(link_to_audio):
+def recognize(filepath):
     """
     Performs synchronous speech recognition on an audio file
 
@@ -26,13 +26,17 @@ def fetch_and_recognize(link_to_audio):
         "sample_rate_hertz": sample_rate_hertz,
         "encoding": encoding,
     }
-    audio = {"uri": link_to_audio}
+    with io.open(filepath, "rb") as f:
+        content = f.read()
+    audio = {"content": content}
+
 
 
     response = client.recognize(config, audio)
-    transcript = ""
+    converted_text = ""
     for result in response.results:
         # First alternative is the most probable result
         alternative = result.alternatives[0]
-        transcript+=(u"Transcript: {}".format(alternative.transcript))
-    return transcript
+        converted_text+=(u"Transcript: {}\n".format(alternative.transcript))
+        print(converted_text)
+    return converted_text
