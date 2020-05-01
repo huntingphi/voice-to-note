@@ -62,10 +62,10 @@ Use a tool such as [ngrok]('https://ngrok.com/') to expose the server running lo
 
 You'll find this on the [Sandbox Configuration]() page.
 If your public url is https://notarealurl.com then your settings will be as follows:
-| | |
---- | --- | ---
+
 |WHEN A MESSAGE COMES IN |  https://notarealurl.com/bot-receiver | HTTP Post|
-|WHEN A MESSAGE COMES IN |  https://notarealurl.com/bot-status | HTTP Post|
+--- | --- | ---
+|STATUS CALLBACK URL |  https://notarealurl.com/bot-status | HTTP Post|
 
 
 7. Connect to the sandbox
